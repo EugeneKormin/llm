@@ -2,6 +2,6 @@ import configparser
 config = configparser.ConfigParser()
 
 
-config.read('./config.ini')
+config.read('D:\my_apps\python_app\llm\config.ini')
 
-OPENAI_API_TOKEN = config['OPEN_AI']['API_TOKEN']
+OPENAI_API_TOKEN = config['OPENAI']['API_TOKEN']
