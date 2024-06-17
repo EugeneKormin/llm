@@ -8,8 +8,8 @@ llm_: LLM = LLM()
 
 @app.route('/invoke', methods=['GET'])
 def llm():
-    TEXT: str = request.args.get('text')
-    RESPONSE: str = llm_.get_response(TEXT=TEXT)
+    TASK: str = request.args.get('task')
+    RESPONSE: str = llm_.get_response(TASK=TASK)
     return RESPONSE
 
 
